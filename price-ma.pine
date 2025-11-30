@@ -3,11 +3,11 @@
 
 //@version=6
 // -----------------------------------------------------------------------------
-//  Price-MA Deviation (Normalized)
+//  Price-MA Deviation (PMAD)
 //  On GitHub: https://github.com/realanthonyc/Price-MA-Deviation
-//  v1.0.8
+//  v1.0.9
 // -----------------------------------------------------------------------------
-indicator("Price-MA Deviation", shorttitle="PMA Deviation", overlay=false, precision=2, explicit_plot_zorder=true)
+indicator("Price-MA Deviation (PMAD)", shorttitle="PMAD", overlay=false, precision=2, explicit_plot_zorder=true)
 
 // === DEVIATION SETTINGS ===
 
