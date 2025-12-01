@@ -5,7 +5,7 @@
 // -----------------------------------------------------------------------------
 //  Price-MA Deviation (PMAD)
 //  On GitHub: https://github.com/realanthonyc/Price-MA-Deviation
-//  v1.0.9
+//  v1.1.0
 // -----------------------------------------------------------------------------
 indicator("Price-MA Deviation (PMAD)", shorttitle="PMAD", overlay=false, precision=2, explicit_plot_zorder=true)
 
@@ -55,9 +55,9 @@ hMid    = hline(50, "Midpoint", color=color.new(color.gray, 80), linestyle=hline
 hLower  = hline(15, "Oversold Ref", color=color.new(color.green, 50), linestyle=hline.style_dotted, linewidth=2)
 hBottom = hline(0, "Min", color=color.new(color.green, 90), linestyle=hline.style_solid, linewidth=1)
 
-// Background Fills
-fill(hTop, hUpper, color=color.new(color.red, 98), title="Overbought Zone", display=display.none)
-fill(hBottom, hLower, color=color.new(color.green, 98), title="Oversold Zone", display=display.none)
+// Top and Bottom Fills
+fill(hTop, hUpper, color=color.new(color.red, 98), title="Overbought Zone")
+fill(hBottom, hLower, color=color.new(color.green, 98), title="Oversold Zone")
 
 // Plot Deviation Lines
 plot(valSlow, title="Slow Deviation", color=colSlow, linewidth=1)
